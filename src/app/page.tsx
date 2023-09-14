@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero-section/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import StickyNav from "@/components/Navbar/StickyNav";
@@ -26,8 +27,8 @@ export default function Home() {
             <Productivity />
           </div>
         </div>
+        <Footer />
       </div>
-      {/* <Footer /> */}
     </>
   );
 }

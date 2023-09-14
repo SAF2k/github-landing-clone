@@ -8,9 +8,7 @@ import OpenSourceNav from './OpenSourceNav'
 import Container from '@/app/Container'
 import Link from 'next/link'
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const [showNav, setShowNav] = useState(false)
 
   return (
@@ -23,7 +21,7 @@ const Navbar = (props: Props) => {
                 href="/"
                 className="px-2 py-[6px] border-[1px] rounded-md hover:text-neutral-400"
               >
-                Sign up
+                Sign in
               </Link>
             </div>
             <Link className="" href="https://github.com">

@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
@@ -24,7 +26,7 @@ const HoverCard: React.FC<Props> = ({
   left,
 }) => {
   const [hovered, setIsHovered] = useState<boolean>(false);
-  
+
   const [springProps, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 6000, friction: 1000 },
