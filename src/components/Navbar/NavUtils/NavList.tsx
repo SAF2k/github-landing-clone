@@ -1,15 +1,15 @@
-"use client";
-import { useState } from "react";
+'use client'
+import { useState } from 'react'
 
 type Props = {
-  main?: string;
-  submain: string;
-  path: string;
-  path2?: string;
-};
+  main?: string
+  submain: string
+  path: string
+  path2?: string
+}
 
 const NavList = ({ main, submain, path, path2 }: Props) => {
-  const [focus, setFocus] = useState<boolean>(false);
+  const [focus, setFocus] = useState<boolean>(false)
   return (
     <a
       href="#"
@@ -26,7 +26,7 @@ const NavList = ({ main, submain, path, path2 }: Props) => {
         width="24"
         data-view-component="true"
         className={` mr-3 transition ease-in duration-100  ${
-          focus ? "text-blue-600" : "text-neutral-500"
+          focus ? 'text-blue-600' : 'text-neutral-500'
         }`}
       >
         <path d={path}></path>
@@ -34,12 +34,12 @@ const NavList = ({ main, submain, path, path2 }: Props) => {
       </svg>
       <div
         className={`${
-          focus ? "text-blue-600" : "text-neutral-500"
+          focus ? 'text-blue-600' : 'text-neutral-500'
         } transition ease-in duration-100 text-[14px]`}
       >
         <div
           className={`font-semibold transition ease-in duration-100 ${
-            focus ? "text-blue-600" : "text-neutral-800"
+            focus ? 'text-blue-600' : 'text-neutral-800'
           } text-base leading-5`}
         >
           {main}
@@ -47,7 +47,7 @@ const NavList = ({ main, submain, path, path2 }: Props) => {
         {submain}
       </div>
     </a>
-  );
-};
+  )
+}
 
-export default NavList;
+export default NavList

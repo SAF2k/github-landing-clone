@@ -1,30 +1,30 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link'
+import { useState } from 'react'
 
-type Props = {};
+type Props = {}
 
 const OpenSourceNav: React.FC<Props> = (props) => {
-  const [show, setShow] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(false)
 
   const handleOnClick = () => {
     if (window.innerWidth < 1024) {
-      setShow(!show);
+      setShow(!show)
     }
-  };
+  }
 
   const handleOnMouseEnter = () => {
     if (window.innerWidth >= 1024) {
-      setShow(true);
+      setShow(true)
     }
-  };
+  }
 
   const handleOnMouseLeave = () => {
     if (window.innerWidth >= 1024) {
-      setShow(false);
+      setShow(false)
     }
-  };
+  }
 
   return (
     <li
@@ -36,7 +36,7 @@ const OpenSourceNav: React.FC<Props> = (props) => {
         onClick={handleOnClick}
         type="button"
         className={`flex items-center p-1 transition ease-in duration-150 rounded max-lg:justify-between max-lg:font-semibold max-lg:w-full ${
-          show ? "lg:text-neutral-300" : ""
+          show ? 'lg:text-neutral-300' : ''
         }`}
       >
         Open Source
@@ -51,8 +51,8 @@ const OpenSourceNav: React.FC<Props> = (props) => {
           data-view-component="true"
           className={`octicon octicon-chevron-down HeaderMenu-icon ml-1 transition-all ease-in duration-200  max-lg:scale-x-125 ${
             show
-              ? "lg:mt-2 opacity-40 max-lg:rotate-0"
-              : "mt-0 max-lg:-rotate-90"
+              ? 'lg:mt-2 opacity-40 max-lg:rotate-0'
+              : 'mt-0 max-lg:-rotate-90'
           }`}
         >
           <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
@@ -60,7 +60,7 @@ const OpenSourceNav: React.FC<Props> = (props) => {
       </button>
       <div
         className={`relative lg:absolute rounded -ml-5 bg-neutral-50 lg:py-2 p-6 w-[320px] transition ease-in duration-150 ${
-          show ? "opacity-100 visible" : "opacity-0 hidden"
+          show ? 'opacity-100 visible' : 'opacity-0 hidden'
         }`}
       >
         <div className="lg:border-b-[1px] mb-4 pb-3 pt-4 w-full">
@@ -73,7 +73,7 @@ const OpenSourceNav: React.FC<Props> = (props) => {
         </div>
         <div className="lg:border-b-[1px] mb-2 pb-3 pt-0 w-full">
           <h2 className="text-neutral-800 font-semibold text-base hover:text-blue-600 hover:cursor-pointer">
-            The ReadMe Projects{" "}
+            The ReadMe Projects{' '}
           </h2>
           <p className="text-sm font-normal text-neutral-500">
             GitHub community articles
@@ -103,7 +103,7 @@ const OpenSourceNav: React.FC<Props> = (props) => {
         </div>
       </div>
     </li>
-  );
-};
+  )
+}
 
-export default OpenSourceNav;
+export default OpenSourceNav

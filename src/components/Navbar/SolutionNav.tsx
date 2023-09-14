@@ -1,35 +1,35 @@
-"use client";
-import { useState } from "react";
-import NavList2 from "./NavUtils/NavList2";
+'use client'
+import { useState } from 'react'
+import NavList2 from './NavUtils/NavList2'
 
-type Props = {};
+type Props = {}
 
 const SolutionNav = (props: Props) => {
-  const [show, setShow] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(false)
 
   const handleOnclick = () => {
     if (window.innerWidth < 1024) {
-      setShow(!show);
+      setShow(!show)
     }
-  };
+  }
   const handleMouseEnter = () => {
     if (window.innerWidth > 1024) {
-      setShow(true);
+      setShow(true)
     }
-  };
+  }
 
   const handleMouseLeave = () => {
     if (window.innerWidth > 1024) {
-      setShow(false);
+      setShow(false)
     }
-  };
+  }
   return (
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <button
         onClick={handleOnclick}
         type="button"
         className={`flex max-lg:font-semibold  items-center p-1 max-lg:justify-between max-lg:w-full ${
-          show ? "lg:text-neutral-300" : ""
+          show ? 'lg:text-neutral-300' : ''
         }`}
       >
         Solutions
@@ -43,7 +43,7 @@ const SolutionNav = (props: Props) => {
           width="16"
           data-view-component="true"
           className={` ml-1 transition-all ease-in duration-200 max-lg:scale-x-125 ${
-            show ? "lg:mt-2 opacity-40 max-lg:0" : "mt-0 max-lg:-rotate-90"
+            show ? 'lg:mt-2 opacity-40 max-lg:0' : 'mt-0 max-lg:-rotate-90'
           }`}
         >
           <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
@@ -51,7 +51,7 @@ const SolutionNav = (props: Props) => {
       </button>
       <div
         className={`relative lg:absolute -ml-5 bg-white rounded-md lg:py-4 p-6 w-[300px] transition ease-in duration-300 ${
-          show ? "opacity-100 " : "opacity-0 hidden top-[2000px]"
+          show ? 'opacity-100 ' : 'opacity-0 hidden top-[2000px]'
         }`}
       >
         <div className="lg:border-b-[1px] mb-2 pb-2 pt-2 w-full">
@@ -124,7 +124,7 @@ const SolutionNav = (props: Props) => {
         </div>
       </div>
     </li>
-  );
-};
+  )
+}
 
-export default SolutionNav;
+export default SolutionNav
