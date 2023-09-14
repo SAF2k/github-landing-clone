@@ -58,6 +58,26 @@ html {
   -webkit-backdrop-filter: blur(3px);
 }
 
+.heroIcon:hover {
+  .hoverIcon {
+    --tw-translate-x: 0.25rem /* -4px */;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .hoverPath {
+    opacity: 1;
+  }
+  .hoverUnderline {
+    width: 91.666667%;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
 .home-campaign-signup-button {
   background: linear-gradient(
       180deg,
@@ -145,11 +165,8 @@ html {
 }
 
 .box-shadow-card-mktg {
-  box-shadow:
-    0 3px 2px rgba(0, 0, 0, 0.04),
-    0 7px 5px rgba(0, 0, 0, 0.02),
-    0 13px 10px rgba(0, 0, 0, 0.02),
-    0 22px 17px rgba(0, 0, 0, 0.02) !important;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02),
+    0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
 }
 
 .code-editor-line-mktg {
@@ -162,8 +179,7 @@ html {
 }
 
 .box-shadow-mktg-xl {
-  box-shadow:
-    0 2.74416px 2.74416px rgba(0, 0, 0, 0.0274351),
+  box-shadow: 0 2.74416px 2.74416px rgba(0, 0, 0, 0.0274351),
     0 5.48831px 5.48831px rgba(0, 0, 0, 0.0400741),
     0 13.7208px 10.9766px rgba(0, 0, 0, 0.0499982),
     0 20.5812px 20.5812px rgba(0, 0, 0, 0.0596004),
