@@ -1,12 +1,12 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 import ProductNav from './ProductNav'
 import SolutionNav from './SolutionNav'
 import OpenSourceNav from './OpenSourceNav'
 import Container from '@/app/Container'
-import Link from 'next/link'
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false)
@@ -46,7 +46,7 @@ const Navbar = () => {
               <div
                 className={`w-[23px] h-[2px] transition ease-in duration-150 bg-white ${
                   showNav
-                    ? 'rotate-45 mb-0  translate-y-[1px]'
+                    ? 'rotate-45 mb-0 translate-y-[1px]'
                     : 'rotate-0 mb-1'
                 } `}
               ></div>

@@ -12,8 +12,6 @@ const StickyNav = () => {
   const [collab1, setcollab1] = useState(false)
   const [security1, setSecurity1] = useState(false)
   const [smallNav, setSmallNav] = useState(false)
-  const [hovered, setHovered] = useState(false)
-  const [hovered1, setHovered1] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {

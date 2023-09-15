@@ -7,7 +7,7 @@ interface FooterListProps {
 
 const Footer = () => {
   return (
-    <div className="footer relative pt-14 break-words ">
+    <div id="Footer" className="footer relative pt-14 break-words ">
       <div className="max-w-[1280px] mx-auto relative z-[2] overflow-hidden">
         <div className="flex flex-col lg:flex-row py-10 mb-8 space-x-6 px-4">
           <div className="mb-12 px-2">
@@ -166,8 +166,8 @@ const Footer = () => {
               <Link href="">
                 <Image
                   src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
-                  height="18"
-                  width="22"
+                  height={18}
+                  width={22}
                   className="d-block"
                   loading="lazy"
                   decoding="async"

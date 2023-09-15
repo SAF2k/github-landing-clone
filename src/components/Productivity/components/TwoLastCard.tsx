@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import HoverCard from './HoverCard';
+import Link from 'next/link';
 
 const TwoLastCard = () => {
   return (
@@ -14,7 +15,7 @@ const TwoLastCard = () => {
               and secure CI/CD.
             </p>
             <div>
-              <a
+              <Link
                 href=""
                 className="heroIcon md:text-xl text-white font-semibold inline-block"
               >
@@ -42,7 +43,7 @@ const TwoLastCard = () => {
                 <div
                   className={`hoverUnderline w-0 scale-0 $ origin-left  transition ease-in duration-300 h-[2.5px] bg-white rounded-full`}
                 ></div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="overflow-hidden rounded-s-lg">
@@ -66,7 +67,7 @@ const TwoLastCard = () => {
               on the go.
             </p>
             <div>
-              <a
+              <Link
                 href=""
                 className="heroIcon md:text-xl text-white font-semibold inline-block"
               >
@@ -94,7 +95,7 @@ const TwoLastCard = () => {
                 <div
                   className={`hoverUnderline w-0 scale-0 origin-left  transition ease-in duration-300 h-[2.5px] bg-white rounded-full`}
                 ></div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="overflow-hidden rounded-s-lg">
