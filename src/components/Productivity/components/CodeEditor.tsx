@@ -298,10 +298,10 @@ const CodeEditor = () => {
             </div>
           </div>
           <div className="px-6 flex items-center justify-between h-full bg-[#040d21]">
-            <Image
+           <Image
               className="w-full h-auto md:block"
-              width="1238"
-              height="1404"
+              width={1238}
+              height={1404}
               loading="lazy"
               decoding="async"
               alt="Planet earth with visualization of GitHub activity crossing the globe"

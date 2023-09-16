@@ -101,8 +101,8 @@ const TwoLastCard = () => {
           <div className="overflow-hidden rounded-s-lg">
             <Image
               className="w-full  h-auto"
-              width="1208"
-              height="764"
+            width={1208}
+            height={764}
               loading="lazy"
               decoding="async"
               alt=""

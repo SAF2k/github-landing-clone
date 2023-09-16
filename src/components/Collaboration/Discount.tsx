@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const CodeSpace = () => {
-  const lineVariant = {
-    hidden: { height: 0 },
-    show: { height: "100%" },
-  };
+const Discount = () => {
   return (
     <div className="flex relative md:pl-10">
       <Image
@@ -20,12 +16,9 @@ const CodeSpace = () => {
       />
       <div className="flex items-center flex-row relative">
         <motion.div
-          variants={lineVariant}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-          transition={{ duration: 0.3 }}
-          className="w-[3px] h-full increase origin-top"
+          initial={{ height: 0 }}
+          whileInView={{ height: "100%" }}
+          className="w-[3px] h-full increase1"
         ></motion.div>
         <Image
           alt=""
@@ -41,7 +34,7 @@ const CodeSpace = () => {
           className="hidden md:block absolute bottom-4 left-0"
           loading="lazy"
           decoding="async"
-          src="https://github.githubassets.com/images/modules/site/home-campaign/git-branch-productivity.svg"
+          src="https://github.githubassets.com/images/modules/site/home-campaign/git-branch-collaboration.svg"
         />
       </div>
       <div className="lg:pl-24 md:pl-16 pl-6">
@@ -50,21 +43,21 @@ const CodeSpace = () => {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2, type: "tween" }}
+              transition={{ type: "tween", duration: 0.3 }}
               className="md:pr-6"
             >
               <h2 className="mb-4 text-2xl max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full text-[#7d8590]">
                 <span className="font-semibold text-white">
-                  GitHub Codespaces
+                  GitHub Issues and GitHub Projects
                 </span>{" "}
-                offers a complete dev environment in seconds, so you can code,
-                build, test, and open pull requests from any repo anywhere.
+                supply flexible project management tools that adapt to your team
+                alongside your code.
               </h2>
               <a
                 href=""
                 className="heroIcon py-1 inline-block text-xl text-white font-semibold"
               >
-                Check out GitHub CodeSpaces
+                Explore GitHube Issue
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={`hoverIcon mb-[2px] text-white transition inline-block ml-3 ease-in duration-300`}
@@ -78,7 +71,7 @@ const CodeSpace = () => {
                     d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"
                   ></path>
                   <path
-                    className={`hoverPath text-white transition ease-in duration-150 opacity-0`}
+                    className={`hoverPath opacity-0 text-white transition ease-in duration-150`}
                     stroke="currentColor"
                     d="M1.75 8H11"
                     strokeWidth="1.5"
@@ -91,76 +84,44 @@ const CodeSpace = () => {
               </a>
             </motion.div>
           </div>
-          <div className="py-4 px-6 w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "tween", duration: 0.3 }}
+            className="py-4 px-6 w-full"
+          >
             <div className="relative">
-              <div className="flex flex-row relative">
-                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ type: "tween" }}
-                  className="sm:absolute z-[1] top-[-200px] right-7 shadow-2xl"
-                >
+              <div className="relative">
+                <div className="md:absolute z-[1] top-[-200px] lg:top-[-300px] right-0 shadow-2xl">
                   <Image
-                    height={300}
-                    width={300}
-                    src="/pic.png"
+                    src="https://github.githubassets.com/images/modules/site/home-campaign/illu-projects.png"
                     alt=""
                     loading="lazy"
                     decoding="async"
-                    className=" w-[300px] h-auto rounded-md"
+                    width={1190}
+                    height={1004}
+                    className="w-full h-auto d-block rounded-lg"
                   />
-                  <Image
-                    src="https://github.githubassets.com/images/modules/site/codespaces/illo-cursor.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    className="absolute js-build-in-item build-in-slideX-left h-auto build-in-animate"
-                    width={60}
-                    height={96}
-                    style={{
-                      right: "20%",
-                      bottom: "23%",
-                      width: "30px",
-                      transitionDelay: "200ms",
-                    }}
-                  />
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ type: "tween", delay: 0.1 }}
-                  className=" overflow-hidden max-w-[373px] bottom-0 rounded-md relative hidden sm:block build-in-animate"
-                >
-                  <Image
-                    src="https://github.githubassets.com/images/modules/site/codespaces/illo-ports.png"
-                    loading="lazy"
-                    width={746}
-                    height={368}
-                    alt=""
-                    decoding="async"
-                    className="width-full d-block h-auto"
-                  />
-                </motion.div>
+                </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ type: "tween", delay: 0.1 }}
+          transition={{ type: "tween", duration: 0.3 }}
           className="mb-10 md:mb-32 pb-4 "
         >
           <div className="py-4 text-left">
-            <div className="z-[1] inline-block rounded-full px-2 border-2 border-[#7ee787] relative font-medium bg-gradient-to-r from-[#7ee787] to-[#aff5b4] bg-clip-text text-transparent">
+            <div className="z-[1] inline-block rounded-full px-2 border-2 border-[#ffc2b2] relative font-medium bg-gradient-to-r from-[#ffa28b] to-[#ffc2b2] bg-clip-text text-transparent">
               <span className="font-semibold text-[12px]">Did you know?</span>
             </div>
-            <h3 className="text-[#7ee787] mb-2 mt-3 lg:text-6xl md:text-5xl text-3xl font-medium">
-              22% increase
+            <h3 className="text-[#ffa28b] mb-2 mt-3 lg:text-6xl md:text-5xl text-3xl font-medium">
+              80% reduction
             </h3>
             <p className="mb-3 md:text-xl text-base font-medium text-white">
-              in developer productivity <br /> after three years with GitHub
-              <sup>1</sup>
+              in onboarding time with GitHub<sup>1</sup>
             </p>
           </div>
         </motion.div>
@@ -169,4 +130,4 @@ const CodeSpace = () => {
   );
 };
 
-export default CodeSpace;
+export default Discount;

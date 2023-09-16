@@ -88,8 +88,8 @@ const Footer = () => {
               <Link href="">
                 <Image
                   src="https://github.githubassets.com/images/modules/site/icons/footer/twitter.svg"
-                  height="18"
-                  width="22"
+                  height={18}
+                  width={22}
                   className="d-block"
                   loading="lazy"
                   decoding="async"
@@ -101,8 +101,8 @@ const Footer = () => {
               <Link href="">
                 <Image
                   src="https://github.githubassets.com/images/modules/site/icons/footer/facebook.svg"
-                  height="18"
-                  width="22"
+                  height={18}
+                  width={22}
                   className="d-block"
                   loading="lazy"
                   decoding="async"
@@ -114,8 +114,8 @@ const Footer = () => {
               <Link href="">
                 <Image
                   src="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg"
-                  height="18"
-                  width="22"
+                  height={18}
+                  width={22}
                   className="d-block"
                   loading="lazy"
                   decoding="async"
@@ -127,8 +127,8 @@ const Footer = () => {
               <Link href="">
                 <Image
                   src="https://github.githubassets.com/images/modules/site/icons/footer/youtube.svg"
-                  height="18"
-                  width="22"
+                  height={18}
+                  width={22}
                   className="d-block"
                   loading="lazy"
                   decoding="async"
@@ -140,8 +140,8 @@ const Footer = () => {
               <Link href="">
                 <Image
                   src="https://github.githubassets.com/images/modules/site/icons/footer/twitch.svg"
-                  height="18"
-                  width="22"
+                  height={18}
+                  width={22}
                   className="d-block"
                   loading="lazy"
                   decoding="async"
@@ -153,8 +153,8 @@ const Footer = () => {
               <Link href="">
                 <Image
                   src="https://github.githubassets.com/images/modules/site/icons/footer/tiktok.svg"
-                  height="18"
-                  width="22"
+                  height={18}
+                  width={22}
                   className="d-block"
                   loading="lazy"
                   decoding="async"
