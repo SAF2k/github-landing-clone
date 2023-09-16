@@ -2,9 +2,7 @@
 import { useState } from 'react'
 import NavList2 from './NavUtils/NavList2'
 
-type Props = {}
-
-const SolutionNav = (props: Props) => {
+const SolutionNav = () => {
   const [show, setShow] = useState<boolean>(false)
 
   const handleOnclick = () => {

@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 type Props = {}
 
-const OpenSourceNav: React.FC<Props> = (props) => {
+const OpenSourceNav = () => {
   const [show, setShow] = useState<boolean>(false)
 
   const handleOnClick = () => {

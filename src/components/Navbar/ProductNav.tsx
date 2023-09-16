@@ -2,9 +2,7 @@ import { useState } from 'react'
 import NavList from './NavUtils/NavList'
 import NavList2 from './NavUtils/NavList2'
 
-type Props = {}
-
-const ProductNav: React.FC<Props> = (props) => {
+const ProductNav = () => {
   const [show, setShow] = useState<boolean>(false)
 
   const handleMouseEnter = () => {

@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 
 type Props = {
@@ -11,7 +12,7 @@ type Props = {
 const NavList = ({ main, submain, path, path2 }: Props) => {
   const [focus, setFocus] = useState<boolean>(false)
   return (
-    <a
+    <Link
       href="#"
       onMouseEnter={() => setFocus(true)}
       onMouseLeave={() => setFocus(false)}
@@ -46,7 +47,7 @@ const NavList = ({ main, submain, path, path2 }: Props) => {
         </div>
         {submain}
       </div>
-    </a>
+    </Link>
   )
 }
 

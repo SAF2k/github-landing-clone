@@ -1,6 +1,8 @@
 import Image from "next/image";
-import CodeBlock from "./CodeBlock";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
+const CodeBlock = dynamic(() => import("./CodeBlock"));
 
 const CodeEditor = () => {
   const container = {

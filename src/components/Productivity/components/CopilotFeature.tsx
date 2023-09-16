@@ -1,11 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import HoverCard from "./HoverCard";
 import { motion } from "framer-motion";
 
-type Props = {};
-
-const CopilotFeature = (props: Props) => {
+const CopilotFeature = () => {
   const [showPy, setShowPy] = useState<boolean>(true);
   const [showJs, setShowJs] = useState<boolean>(false);
   const [showGo, setShowGo] = useState<boolean>(false);

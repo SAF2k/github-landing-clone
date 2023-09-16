@@ -1,10 +1,10 @@
-"use client";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
-import CodeEditor from "./components/CodeEditor";
-import CodeSpace from "./components/CodeSpace";
-import CopilotFeature from "./components/CopilotFeature";
-import TwoLastCard from "./components/TwoLastCard";
+const CodeEditor = dynamic(() => import("./components/CodeEditor"))
+const CodeSpace = dynamic(() => import("./components/CodeSpace"))
+const CopilotFeature = dynamic(() => import("./components/CopilotFeature"), { ssr: false })
+const TwoLastCard = dynamic(() => import("./components/TwoLastCard"))
 
 const Productivity = () => {
   return (

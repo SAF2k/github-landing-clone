@@ -5,10 +5,7 @@ import Image from "next/image";
 
 const Navbar = dynamic(() => import("@/components/Navbar/Navbar"));
 const Hero = dynamic(() => import("@/components/Hero-section/Hero"));
-const Productivity = dynamic(
-  () => import("@/components/Productivity/Productivity"),
-  { ssr: false }
-);
+const Productivity = dynamic(() => import("@/components/Productivity/Productivity"));
 const StickyNav = dynamic(() => import("@/components/Navbar/StickyNav"), {
   ssr: false,
 });
@@ -16,10 +13,10 @@ const Collaboration = dynamic(
   () => import("@/components/Collaboration/Collaboration")
 );
 const Security = dynamic(() => import("@/components/Security/Security"));
-const Footer = dynamic(() => import("@/components/Footer/Footer"));
 const Globe = dynamic(() => import("@/components/Footer/Globe"), {
   ssr: false,
   });
+const Footer = dynamic(() => import("@/components/Footer/Footer"));
 
 export default function Home() {
   return (
@@ -64,6 +61,20 @@ export default function Home() {
             <Security />
           </div>
           <Globe />
+          <div className="max-w-[1280px] mx-auto relative z-[2]  px-5">
+            <ul className="lg:w-9/12 text-[14px] pt-16 text-[#7d8590] space-y-1">
+              <li>
+                <sup id="footnote-1">1</sup> The Total Economic Impact™ Of
+                GitHub Enterprise Cloud and Advanced Security, a commissioned
+                study conducted by Forrester Consulting, 2022. Results are for a
+                composite organization based on interviewed customers.
+              </li>
+              <li>
+                <sup id="footnote-2">2</sup> GitHub, Octoverse 2022 The state of
+                open source software.
+              </li>
+            </ul>
+          </div>
         </div>
         <Footer />
       </div>

@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-type Props = {};
-
-const Projects = (props: Props) => {
+const Projects = () => {
   return (
     <div className="flex relative md:pl-10">
       <Image

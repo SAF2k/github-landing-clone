@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link";
 
-import HoverCard from './HoverCard';
-import Link from 'next/link';
+import HoverCard from "./HoverCard";
 
 const TwoLastCard = () => {
   return (
@@ -101,8 +101,8 @@ const TwoLastCard = () => {
           <div className="overflow-hidden rounded-s-lg">
             <Image
               className="w-full  h-auto"
-            width={1208}
-            height={764}
+              width={1208}
+              height={764}
               loading="lazy"
               decoding="async"
               alt=""
@@ -114,6 +114,6 @@ const TwoLastCard = () => {
       </div>
     </div>
   );
-}
+};
 
-export default TwoLastCard
+export default TwoLastCard;

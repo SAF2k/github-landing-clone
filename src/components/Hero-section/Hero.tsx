@@ -172,47 +172,47 @@ const Hero = () => {
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg"
                 loading="lazy"
                 alt="Stripe logo"
-                height={44}
-                width={90}
+                height={54}
+                width={98}
                 className="my-3 scale-90"
               />
               <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pinterest.svg"
                 loading="lazy"
                 alt="Pinterest logo"
-                height={44}
-                width={90}
+                height={54}
+                width={98}
                 className="my-3 scale-90"
               />
               <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/kpmg.svg"
                 loading="lazy"
                 alt="KPMG logo"
-                height={44}
-                width={90}
+                height={54}
+                width={98}
                 className="my-3 scale-90"
               />
               <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/mercedes.svg"
                 alt="Mercedes-Benz logo"
-                height={44}
-                width={90}
+                height={54}
+                width={98}
                 className="my-3 w-[200px]"
               />
               <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pg.svg"
                 loading="lazy"
                 alt="P&amp;G logo"
-                height={32}
-                width={90}
+                height={52}
+                width={98}
                 className="my-3 scale-90"
               />
               <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/telus.svg"
                 loading="lazy"
                 alt="Telus logo"
-                height={32}
-                width={90}
+                height={52}
+                width={98}
                 className="my-3 scale-90"
               />
             </div>
