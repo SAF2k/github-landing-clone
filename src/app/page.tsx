@@ -17,6 +17,9 @@ const Collaboration = dynamic(
 );
 const Security = dynamic(() => import("@/components/Security/Security"));
 const Footer = dynamic(() => import("@/components/Footer/Footer"));
+const Globe = dynamic(() => import("@/components/Footer/Globe"), {
+  ssr: false,
+  });
 
 export default function Home() {
   return (
@@ -60,6 +63,7 @@ export default function Home() {
           >
             <Security />
           </div>
+          <Globe />
         </div>
         <Footer />
       </div>
